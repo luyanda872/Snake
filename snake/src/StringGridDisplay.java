@@ -41,6 +41,7 @@ public class StringGridDisplay extends JFrame {
             for (int j = 0; j < newData[0].length; j++) {
                 JLabel label = new JLabel(newData[i][j]);
                 label.setHorizontalAlignment(SwingConstants.CENTER);
+                label.setHorizontalAlignment(JLabel.CENTER);
                 gridPanel.add(label);
             }
         }

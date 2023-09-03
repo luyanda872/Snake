@@ -7,6 +7,7 @@ public class grid {
     ArrayList<snakeBlock> data;
     int xO, yO;
     GridDisplay gridDisplay;
+    int counter = 1;
 
     public grid(int len){
         this.grid = new String[len][len];
@@ -22,11 +23,24 @@ public class grid {
     }
 
     public void insert(){
+        int xo =0, yo =0;
         for(int i = 0; i < data.size(); i++){
             snakeBlock temp = data.get(i);
             int x = temp.getX();
             int y = temp.getY();
-            grid[y][x] = "0";
+            if(i == 0){
+                grid[y][x] = "O";
+                xo = x;
+                yo = y;
+            }
+            else{
+                if(x == xo && y == yo){
+                    snakeSim.canPlay = false;
+                    grid[y][x] = "O";
+                }
+                else
+                    grid[y][x] = "o";
+            }
         }
     }
     public void resert(){
@@ -37,7 +51,7 @@ public class grid {
     }
 
     public boolean insertObz(int x, int y){
-        if(grid[y][x].equals("0")){
+        if(grid[y][x].equals("O") || grid[y][x].equals("o")){
             return false;
         }
         grid[y][x] = "*";
@@ -56,10 +70,13 @@ public class grid {
         }
 
         SwingUtilities.invokeLater(() -> {
-           GridDisplay gridDisplay = new GridDisplay(grid);
-            gridDisplay.repaint();
+            gridDisplay = new GridDisplay(grid);
             gridDisplay.setVisible(true);
         });
+    }
+
+    public void upDate(){
+        gridDisplay.updateGrid(grid);
     }
 
     
