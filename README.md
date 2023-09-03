@@ -10,6 +10,6 @@ The workspace contains two folders by default, where:
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
 ## how far
-Still in a process
+Added a GUI
 
 😭
