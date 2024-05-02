@@ -1,4 +1,4 @@
-# Snake
+# Snake 🐍
 
 This is a classic Snake game implemented in Java using object-oriented programming (OOP) and concurrent programming concepts. The game includes features such as user input handling, grid rendering with a graphical user interface (GUI), collision detection, and snake growth upon eating apples.
 The workspace contains two folders by default, where:
@@ -19,3 +19,15 @@ The workspace contains two folders by default, where:
 - `lib`: the folder to maintain dependencies
 
 Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+## Requirements
+Java Development Kit (JDK) installed
+IDE (e.g., IntelliJ IDEA, Eclipse) for running and editing the code
+
+## how to run
+`cd` to src
+javac `*.java`
+java `snakeSim`
+
+# ENJOY 🐍
+
