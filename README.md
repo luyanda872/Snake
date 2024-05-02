@@ -29,5 +29,3 @@ IDE (e.g., IntelliJ IDEA, Eclipse) for running and editing the code
 javac `*.java`
 java `snakeSim`
 
-# ENJOY 🐍
-
