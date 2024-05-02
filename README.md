@@ -25,7 +25,10 @@ Java Development Kit (JDK) installed
 IDE (e.g., IntelliJ IDEA, Eclipse) for running and editing the code
 
 ## how to run
+
 `cd` to src
+
 javac `*.java`
+
 java `snakeSim`
 
