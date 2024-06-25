@@ -16,7 +16,7 @@ public class snakeSim  {
 
         System.out.print("len: ");
         int len = input.nextInt();
-        String junk = input.nextLine();
+        input.nextLine();
 
         snakeBlock head = new snakeBlock();
         head.set(rand.nextInt(len), rand.nextInt(len));
@@ -132,6 +132,7 @@ public class snakeSim  {
                 }
                 else{
                     System.out.println("thanks for playing");
+                    input.close();
                     System.exit(0);
                 }
             }
